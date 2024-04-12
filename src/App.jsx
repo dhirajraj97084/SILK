@@ -14,6 +14,10 @@ import Gallery from './pages/mehdi_section/gallery_Button/Gallery';
 import Contact from './pages/contact/Contact';
 import About from './pages/about/About';
 import NoPage from './pages/nopage/NoPage';
+import WeddingDuc from './pages/portfolio/wedding_document/WeddingDuc';
+import CouplePortraits from './pages/portfolio/couples02/CouplePortraits';
+import Family from './pages/portfolio/family/Family';
+
 
 function App() {
   return (
@@ -23,6 +27,9 @@ function App() {
           <Route path='/' element={<Home/>} />
           <Route path='/contact' element={<Contact/>} />
           <Route path='/about' element={<About/>} />
+          <Route path='/weddingduct' element={<WeddingDuc/>} />
+          <Route path='/coupleport' element={<CouplePortraits/>} />
+          <Route path='/family' element={<Family/>} />
           <Route path='/*' element={<NoPage/>} />
           
           <Route path='/booking' element={<Booking_Page/>} />

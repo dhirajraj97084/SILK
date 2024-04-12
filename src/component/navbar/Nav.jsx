@@ -34,26 +34,26 @@ const navListMenuItems = [
     title: "WEDDING DOCUMENTARY",
     description: "Find the perfect solution for your needs.",
     icon: SquaresPlusIcon,
-    src:"/gallery",
+    src:"/weddingduct",
   },
   {
     title: "COUPLES & PORTRAITS",
     description: "Meet and learn about our dedication",
     icon: UserGroupIcon,
-    src:"/kerala",
+    src:"/coupleport",
   },
   {
     title: "INDIAN WEDDING",
     description: "Learn how we can help you achieve your goals.",
     icon: SunIcon,
-    src:"/jaipur",
+    src:"/gallery",
   },
 
   {
     title: "FAIMLY PORTRAITS",
     description: "Find the perfect solution for your needs.",
     icon: PhoneIcon,
-    src:"/chennai",
+    src:"/family",
   },
   {
     title: "BEHINDI THE INDIAN VEIL(BOOK)",
