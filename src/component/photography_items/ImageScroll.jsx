@@ -44,11 +44,11 @@ export default function ImageScroll() {
         cssEase: "linear"
       };
   return (
-    <div className="slider-container py-6">
+    <div className="slider-container py-6 ">
     <Slider {...settings}>
     {scrollList.map((items,indexs)=>{
                     return( <div key={indexs} className="img ">
-                        <img className=" w-[18em] p-2 cursor-pointer " src={items.image} alt="" />
+                        <img className=" w-[15em] p-2 cursor-pointer " src={items.image} alt="" />
                     </div> )
                 })}
     </Slider>

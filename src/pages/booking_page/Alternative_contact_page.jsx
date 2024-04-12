@@ -23,7 +23,7 @@ function Alternative_contact_page() {
             <h1 className='text-center'>EMAIL US</h1>
             <p className='text-center'>An email is a very good first contact. Please let us know a little bit about you and your plan and we will get back to you with more information. We usually answer within 24hr.</p>
             <div className="link_item email py-4">
-                <Link to={''} className='cursor-pointer'>
+                <Link to={'https://docs.google.com/forms/d/e/1FAIpQLSeacAKWWw8-sHvRW_X1HEuus7Wga87toEZkIfYE4Pqj8hajug/viewform'} className='cursor-pointer'>
                 <div className="box flex items-center text-cyan-500 justify-center gap-2">
                 <MdOutlineMailOutline className=' size-6 ' />
                 <h2 className=''>Email</h2>
@@ -40,7 +40,7 @@ function Alternative_contact_page() {
                <p className='text-center'>If you are not an email person, or for any reason you feel you want to chat on WhatsApp or catch up on the phone first, please drop a message.</p>
             <p className='text-center'>Chat on WhatsApp</p>
             <div className="link_item whatsapp py-4">
-            <Link to={''} className='cursor-pointer'>
+            <Link to={'https://api.whatsapp.com/send/?phone=%2B919823351221&text&type=phone_number&app_absent=0'} className='cursor-pointer'>
                 <div className="box flex items-center text-cyan-500 justify-center gap-2">
                 <FaWhatsapp className=' size-6' />
                 <h2 className=''>Chat On WhatsApp</h2>

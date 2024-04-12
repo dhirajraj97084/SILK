@@ -59,7 +59,7 @@ const navListMenuItems = [
     title: "BEHINDI THE INDIAN VEIL(BOOK)",
     description: "Find the perfect solution for your needs.",
     icon: PhoneIcon,
-    src:"/couple",
+    src:"/learn",
   },
 ];
 
