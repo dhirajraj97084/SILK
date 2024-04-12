@@ -13,6 +13,7 @@ import Mehdi from './pages/mehdi_section/learnmore_Button/Mehdi';
 import Gallery from './pages/mehdi_section/gallery_Button/Gallery';
 import Contact from './pages/contact/Contact';
 import About from './pages/about/About';
+import NoPage from './pages/nopage/NoPage';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
           <Route path='/' element={<Home/>} />
           <Route path='/contact' element={<Contact/>} />
           <Route path='/about' element={<About/>} />
+          <Route path='/*' element={<NoPage/>} />
           
           <Route path='/booking' element={<Booking_Page/>} />
           <Route path='/learnmore' element={<Learn_mome_button/>} />
