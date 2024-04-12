@@ -216,7 +216,7 @@ export default function Nav() {
   window.addEventListener("scroll", changeColor, true);
 
   return (
-    <Navbar className={` rounded-none max-w-full px-4 py-2 shadow-md top-0 sticky z-20 border-none 
+    <Navbar className={` rounded-none max-w-full container py-2 shadow-md top-0 sticky z-20 border-none 
     ${color ? "navbarComp" : "navbarScrolled"}`}>
       <div className="flex items-center  justify-between text-blue-gray-900">
         <Typography
