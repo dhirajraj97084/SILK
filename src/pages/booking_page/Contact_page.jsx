@@ -108,8 +108,8 @@ function Contact_page() {
           <div className="radio_buttons">
             <div className="radio1 p-6 ">
               <h1 className="text-xl font-semibold mb-2">Requirement </h1>
-              <div className="parall_radio flex gap-6 ml-4">
-                <div className="first grid grid-cols-1 md:grid-cols-2 gap-3  ">
+              <div className="parall_radio  gap-6 ml-4 grid grid-cols-1 md:grid-cols-2 ">
+                <div className="first flex gap-3  ">
                   <input
                     type="checkbox"
                     className=" size-6 checked:bg-blue-500 ..."
