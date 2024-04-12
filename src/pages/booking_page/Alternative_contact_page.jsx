@@ -12,7 +12,7 @@ function Alternative_contact_page() {
         <IoEllipsisHorizontalSharp className="text-5xl mx-auto text-black " />
       </div>
       <div className="heading">
-        <h1 className='text-xl md:text-2xl flex justify-center font-serif pb-5 underline'>ALTERNATIVELY YOU MAY ALWAYS EMAIL OR CALL US</h1>
+        <h1 className='text-xl md:text-2xl flex justify-center font-serif pb-5 underline text-center'>ALTERNATIVELY YOU MAY ALWAYS EMAIL OR CALL US</h1>
       </div>
       <div className="mainbox grid grid-cols-1 md:grid-cols-2 gap-4 pt-6 ">
         <div className="left">
