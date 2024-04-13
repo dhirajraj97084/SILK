@@ -168,9 +168,8 @@ function NavList() {
         
       </Typography>
        {/* <NavListMenu />  */}
-       <div className="box">
        <ResouceDropDown/>
-       </div>
+       
        <hr className="lg:hidden" />
      
       <Typography

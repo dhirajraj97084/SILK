@@ -227,14 +227,14 @@ function Contact_page() {
               <h1 className="pb-1 text-xl font-semibold">If you have an approximate budget that you are working with, please share it with us. </h1>
               <input
                 type="email"
-                className="py-4 px-4 outline-none   bg-white shadow-md rounded-md w-full"
+                className="py-2 px-4 outline-none bg-white shadow-md rounded-md w-[1000px]"
               />
             </div>
             <div className="input1  m-3">
               <h1 className="pb-1 text-xl font-semibold">Email Address for communication  </h1>
               <input
                 type="email"
-                className="py-3 px-4 outline-none bg-white shadow-md rounded-md w-full"
+                className="py-2 px-4 outline-none bg-white shadow-md rounded-md w-[1000px]"
               />
             </div>
               </div>
@@ -246,10 +246,10 @@ function Contact_page() {
               <h1 className="pb-1 text-xl font-semibold"> Country code </h1>
 
               <div className="in flex">
-                <button className="px-4 py-3 bg-gray-300 rounded-l-md"><FaPlus /></button>
+                <button className="px-4 py-2 bg-gray-300 rounded-l-md"><FaPlus /></button>
               <input
                 type="email"
-                className="py-3 px-4 outline-none bg-white shadow-md rounded-r-md "
+                className="py-2 px-4 outline-none bg-white shadow-md rounded-r-md "
               />
               </div>
             </div>
@@ -257,7 +257,7 @@ function Contact_page() {
               <h1 className="pb-1 text-xl font-semibold">Phone number </h1>
               <input
                 type="email"
-                className="py-3 px-4 outline-none bg-white shadow-md rounded-md w-full"
+                className="py-2 px-4 outline-none bg-white shadow-md rounded-md w-[400px]"
               />
             </div>
               </div>

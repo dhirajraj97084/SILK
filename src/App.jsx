@@ -18,6 +18,11 @@ import WeddingDuc from './pages/portfolio/wedding_document/WeddingDuc';
 import CouplePortraits from './pages/portfolio/couples02/CouplePortraits';
 import Family from './pages/portfolio/family/Family';
 import FaqPage from './pages/resourceDrop/FaqPage';
+import ForCouples from './pages/resourceDrop/forCouples/ForCouples';
+import One from './pages/resourceDrop/forCouples/one/One';
+import Two from './pages/resourceDrop/forCouples/two/Two';
+import Three from './pages/resourceDrop/forCouples/three/Three';
+import Four from './pages/resourceDrop/forCouples/four/Four';
 
 
 function App() {
@@ -25,15 +30,25 @@ function App() {
     <div>
       <Router>
         <Routes>
+          {/* paging */}
           <Route path='/' element={<Home/>} />
           <Route path='/contact' element={<Contact/>} />
           <Route path='/about' element={<About/>} />
+          <Route path='/*' element={<NoPage/>} />
+          {/* portfolio */}
           <Route path='/weddingduct' element={<WeddingDuc/>} />
           <Route path='/coupleport' element={<CouplePortraits/>} />
+          {/* resource */}
           <Route path='/faq' element={<FaqPage/>} />
+          <Route path='/forcouples' element={<ForCouples/>} />
+          <Route path='/one' element={<One/>} />
+          <Route path='/two' element={<Two/>} />
+          <Route path='/three' element={<Three/>} />
+          <Route path='/four' element={<Four/>} />
+
           <Route path='/family' element={<Family/>} />
-          <Route path='/*' element={<NoPage/>} />
-          
+        
+           {/* herosection */}
           <Route path='/booking' element={<Booking_Page/>} />
           <Route path='/learnmore' element={<Learn_mome_button/>} />
           <Route path='/gallery' element={<Gallery/>} />

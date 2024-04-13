@@ -27,7 +27,7 @@ const menuItems = [
   },
   {
     title: "FOR COUPLES",
-    src:"/udaipur"
+    src:"/forcouples"
     // description:
     //   "A complete set of UI Elements for building faster websites in less time.",
   },
