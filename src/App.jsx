@@ -17,6 +17,7 @@ import NoPage from './pages/nopage/NoPage';
 import WeddingDuc from './pages/portfolio/wedding_document/WeddingDuc';
 import CouplePortraits from './pages/portfolio/couples02/CouplePortraits';
 import Family from './pages/portfolio/family/Family';
+import FaqPage from './pages/resourceDrop/FaqPage';
 
 
 function App() {
@@ -29,6 +30,7 @@ function App() {
           <Route path='/about' element={<About/>} />
           <Route path='/weddingduct' element={<WeddingDuc/>} />
           <Route path='/coupleport' element={<CouplePortraits/>} />
+          <Route path='/faq' element={<FaqPage/>} />
           <Route path='/family' element={<Family/>} />
           <Route path='/*' element={<NoPage/>} />
           

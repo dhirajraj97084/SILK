@@ -28,6 +28,8 @@ import {
   TagIcon,
   UserGroupIcon,
 } from "@heroicons/react/24/solid";
+import ResouceDropDown from "../../pages/resourceDrop/ResouceDropDown";
+
 
 const navListMenuItems = [
   {
@@ -79,11 +81,12 @@ function NavListMenu() {
             className=" text-sm font-bold"
           >
             {title}
-          </Typography>
+          </Typography>         
           </Link>
         </div>
       </MenuItem>
       </div>
+      
   ));
 
 
@@ -99,7 +102,7 @@ function NavListMenu() {
         <MenuHandler>
           <Typography as="div"  className="font-medium">
             <ListItem
-              className="flex items-center gap-2 py-2 pr-4 font-medium text-gray-900"
+              className="flex items-center gap-2 py-2 pr-4 hover:underline decoration-blue-200 underline-offset-8 font-medium text-gray-900"
               selected={isMenuOpen || isMobileMenuOpen}
               onClick={() => setIsMobileMenuOpen((cur) => !cur)}
             >
@@ -120,14 +123,16 @@ function NavListMenu() {
           </Typography>
         </MenuHandler>
         <MenuList className="hidden max-w-screen-xl rounded-xl lg:block">
-          <ul className="grid grid-cols-3 gap-y-2 outline-none outline-0">
+          <ul className="grid grid-cols-1 gap-y-2 outline-none outline-0">
             {renderItems}
           </ul>
         </MenuList>
+        
       </Menu>
       <div className="block lg:hidden">
         <Collapse open={isMobileMenuOpen}>{renderItems}</Collapse>
       </div>
+      
     </React.Fragment>
   );
 }
@@ -142,10 +147,12 @@ function NavList() {
         className="font-medium"
       >
         <Link to={'/'}>
-        <ListItem className="flex items-center gap-2 py-2 pr-4 underline-offset-8 underline ">HOME</ListItem>
+        <ListItem className="flex items-center gap-2 py-2 pr-4 underline decoration-blue-200 underline-offset-8 ">HOME</ListItem>
         </Link>
       </Typography>
+      <hr className="lg:hidden" />
       <NavListMenu />
+      <hr className="lg:hidden" />
       <Typography
         as="a"
         href="#"
@@ -153,13 +160,18 @@ function NavList() {
         className="font-medium"
       >
         <Link to={'/goa'}>
-        <ListItem className="flex items-center gap-2 py-2 pr-4 hover:underline underline-offset-8 ">
+        <ListItem className="flex items-center gap-2 py-2 pr-4 hover:underline decoration-blue-200 underline-offset-8 ">
          WEDDING
         </ListItem>
+        <hr className="lg:hidden" />
         </Link>
         
       </Typography>
        {/* <NavListMenu />  */}
+       <div className="box">
+       <ResouceDropDown/>
+       </div>
+       <hr className="lg:hidden" />
      
       <Typography
         as="a"
@@ -168,9 +180,10 @@ function NavList() {
         className="font-medium"
       >
        <Link to={'/about'}>
-       <ListItem className="flex items-center gap-2 py-2 pr-4 hover:underline underline-offset-8">
+       <ListItem className="flex items-center gap-2 py-2 pr-4 hover:underline decoration-blue-200 underline-offset-8">
         ABOUT
         </ListItem>
+        <hr className="lg:hidden" />
        </Link>
         
       </Typography>
@@ -182,9 +195,10 @@ function NavList() {
         className="font-medium"
       >
      <Link to={'/contact'}>
-       <ListItem className="flex items-center gap-2 py-2 pr-4 hover:underline underline-offset-8">
+       <ListItem className="flex items-center gap-2 py-2 pr-4 hover:underline decoration-blue-200 underline-offset-8">
           CONTACT
         </ListItem>
+        <hr className="lg:hidden" />
      </Link>
         
       </Typography>
@@ -218,7 +232,7 @@ export default function Nav() {
   return (
     <Navbar className={` rounded-none max-w-full container py-2 shadow-md top-0 sticky z-20 border-none 
     ${color ? "navbarComp" : "navbarScrolled"}`}>
-      <div className="flex items-center  justify-between text-blue-gray-900">
+      <div className="flex items-center justify-between text-blue-gray-900">
         <Typography
           as="a"
           href="#"
@@ -227,8 +241,8 @@ export default function Nav() {
         >
           <Link to={'/'}>
           <div className="logo flex items-center gap-1">
-            <h1 className="bg-black/45 p-3 text-white ">SILK</h1>
-            <h2 className="text-sm">By <span className="md:text-xl">SEPHI BERGERSON</span> </h2>
+            <h1 className="bg-black/45 p-3 text-white  ">SILK</h1>
+            <h2 className="text-sm">By <span className="md:text-xl font-medium  ">SEPHI BERGERSON</span> </h2>
           </div>
           </Link>
         </Typography>
