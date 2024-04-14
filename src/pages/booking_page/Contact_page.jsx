@@ -227,14 +227,14 @@ function Contact_page() {
               <h1 className="pb-1 text-xl font-semibold">If you have an approximate budget that you are working with, please share it with us. </h1>
               <input
                 type="email"
-                className="py-2 px-4 outline-none bg-white shadow-md rounded-md w-[1000px]"
+                className="py-2 px-4 outline-none bg-white shadow-md rounded-md w-full md:w-[1000px]"
               />
             </div>
             <div className="input1  m-3">
               <h1 className="pb-1 text-xl font-semibold">Email Address for communication  </h1>
               <input
                 type="email"
-                className="py-2 px-4 outline-none bg-white shadow-md rounded-md md:w-[1000px]"
+                className="py-2 px-4 outline-none w-full bg-white shadow-md rounded-md md:w-[1000px]"
               />
             </div>
               </div>
@@ -257,7 +257,7 @@ function Contact_page() {
               <h1 className="pb-1 text-xl font-semibold">Phone number </h1>
               <input
                 type="email"
-                className="py-2 px-4 outline-none bg-white shadow-md rounded-md w-[400px]"
+                className="py-2 px-4 outline-none bg-white w-full shadow-md rounded-md md:w-[400px]"
               />
             </div>
               </div>
