@@ -23,6 +23,10 @@ import One from './pages/resourceDrop/forCouples/one/One';
 import Two from './pages/resourceDrop/forCouples/two/Two';
 import Three from './pages/resourceDrop/forCouples/three/Three';
 import Four from './pages/resourceDrop/forCouples/four/Four';
+import Denny from './pages/state_wedding_page/goa_wedding/denny/Denny';
+import Dina from './pages/state_wedding_page/goa_wedding/dina/Dina';
+import Raahil from './pages/state_wedding_page/goa_wedding/raahil/Raahil';
+import Raahil2 from './pages/state_wedding_page/goa_wedding/raahil2/Raahil2';
 
 
 function App() {
@@ -55,6 +59,12 @@ function App() {
           <Route path='/learn' element={<Mehdi/>} />
           {/* state_wedding_router */}
           <Route path='/goa' element={<Goa_wedding/>} />
+                {/* innner_route */}
+               <Route path='/denny' element={<Denny/>} />
+               <Route path='/dina' element={<Dina/>} />
+               <Route path='/rahil' element={<Raahil/>} />
+               <Route path='/rahiltwo' element={<Raahil2/>} />
+
           <Route path='/udaipur' element={<Udaipur/>} />
           <Route path='/kerala' element={<Kerala/>} />
           <Route path='/jaipur' element={<Jaypur/>} />

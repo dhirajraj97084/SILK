@@ -7,28 +7,28 @@ const goa_list = [
       "https://www.silkphotos.com/wp-content/uploads/bb-plugin/cache/couple-shoot-in-Goa-benny_cathy-5-landscape-4a801aa920d44da8efd57836c82ea241-.jpg",
     name: "BENNY & CATHY ~ COUPLE SHOOT",
     para: "Last June I had the pleasure of covering the wedding of Singer Benny Dayal and model-actress Catherine Thangam in Bangalore....",
-    src: "/k",
+    src: "/denny",
   },
   {
     image:
       "https://www.silkphotos.com/wp-content/uploads/bb-plugin/cache/Goa-wedding-photographer-2520160412-1200x800-landscape-14327ab731041fafaf7e49b5bb04d75f-.jpg",
     name: "DINA & CARL",
     para: "I met Dina and Carl a few months ago when they came to visit and finalise the arrangements for their Goa beach wedding at the Taj Exotica resort in south Goa.....",
-    src: "/m",
+    src: "/dina",
   },
   {
     image:
       "https://www.silkphotos.com/wp-content/uploads/bb-plugin/cache/857_SILK_Sephi_20151106-2-landscape-b387f0f16d48f8be44dcf9ae5c8a38cc-.jpg",
     name: "RAAHIL & PIA (PART 2)",
     para: "Last post was all about the first part of Raahil & Pia’s stunning destination wedding in Goa; the Champaign lunch at the forest, the Teeka and engagement on the beach, and the after party....",
-    src: "/n",
+    src: "/rahil",
   },
   {
     image:
       "https://www.silkphotos.com/wp-content/uploads/bb-plugin/cache/Destination-wedding-Goa-Park-Hyatt__001-3-landscape-bfaf74f3d8356d7e6a8f19eed18d819f-.jpg",
     name: " RAAHIL & PIA (PART 1)",
     para: "The season is back in Goa and the weather is great again. Time for the first destination wedding of the season, and this one is one of those weddings that one posts is not enough to cover....",
-    src: "/o",
+    src: "/rahiltwo",
   },
   {
     image:
@@ -83,7 +83,7 @@ function Goa_wedding() {
           <div className="box1 grid md:grid-cols-3 grid-cols-1">
             {goa_list.map((item, index) => {
               return (
-                <Link key={index} to={""}>
+                <Link key={index} to={item.src}>
                   <div className="main hover:bg-transparent  bg-gray-300 m-3">
                     <div className="img">
                       <img

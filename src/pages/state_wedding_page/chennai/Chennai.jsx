@@ -26,7 +26,7 @@ function Chennai() {
           <div className="box1 grid md:grid-cols-3 grid-cols-1">
             {chenni_list.map((item, index) => {
               return (
-                <Link key={index} to={""}>
+                <Link key={index} to={item.src}>
                   <div className="main hover:bg-transparent  bg-gray-300 m-3">
                     <div className="img">
                       <img
