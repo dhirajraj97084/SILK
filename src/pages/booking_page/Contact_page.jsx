@@ -234,7 +234,7 @@ function Contact_page() {
               <h1 className="pb-1 text-xl font-semibold">Email Address for communication  </h1>
               <input
                 type="email"
-                className="py-2 px-4 outline-none bg-white shadow-md rounded-md w-[1000px]"
+                className="py-2 px-4 outline-none bg-white shadow-md rounded-md md:w-[1000px]"
               />
             </div>
               </div>
