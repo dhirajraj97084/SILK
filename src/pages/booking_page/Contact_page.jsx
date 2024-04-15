@@ -8,19 +8,19 @@ import * as yup from "yup";
 
 // create_schema for contact page
 const schema = yup.object().shape({
-  email : yup.string().email().required(),
-  name: yup.string().required(),
-  bridname: yup.string().required(),
-  groomname: yup.string().required(),
-  weddingdate: yup.string().required(),
-  weddinglocation: yup.string().required(),
-  nooffunction: yup.number().positive().integer().required(),
-  days: yup.number().positive().integer().required(),
-  guestnumber: yup.number().positive().integer().required(),
-  budget: yup.number().positive().integer().required(),
-  emailforcommunication: yup.string().required(),
-  countrycode: yup.string().max(2).required(),
-  phonenumber: yup.string().max(10).required(),
+  email : yup.string().email().required('please answer the question'),
+  name: yup.string().required('please answer the question'),
+  bridname: yup.string().required('please answer the question'),
+  groomname: yup.string().required('please answer the question'),
+  weddingdate: yup.string().required('please answer the question'),
+  weddinglocation: yup.string().required('please answer the question'),
+  nooffunction: yup.number().positive().integer().required('please answer the question'),
+  days: yup.number().positive().integer().required('please answer the question'),
+  guestnumber: yup.number().positive().integer().required('please answer the question'),
+  budget: yup.number().positive().integer().required('please answer the question'),
+  emailforcommunication: yup.string().required('please answer the question'),
+  countrycode: yup.string().max(2).required('please answer the question'),
+  phonenumber: yup.string().max(10).required('please answer the question'),
 });
 
 
@@ -35,7 +35,7 @@ function Contact_page() {
   };
 
   return (
-    <div>
+    <form onSubmit={handleSubmit(submitform)}>
       <div className="container mx-auto">
         <div className="main py-4">
           <IoEllipsisHorizontalSharp className="text-5xl mx-auto " />
@@ -57,7 +57,7 @@ function Contact_page() {
             </p>
           </div>
         </div>
-        <div onSubmit={handleSubmit(submitform)} className="inputs_items6 ">
+        <div  className="inputs_items6 ">
           <div className=" first6_input py-4 grid grid-cols-1 md:grid-cols-2  ">
             <div className="input1 px-4 m-3">
               <h1 className="pb-1 text-xl font-semibold">Email</h1>
@@ -67,7 +67,7 @@ function Contact_page() {
                 {...register("email")}
                 className="py-2 px-2 outline-none   bg-white shadow-md rounded-md w-full"
               />
-              <p> { errors?.email?.message } </p>
+              <p className="text-red-800 font-semibold"> { errors?.email?.message } </p>
             </div>
             <div className="input2 px-4 m-3">
               <h1 className="pb-1 text-xl font-semibold">
@@ -79,7 +79,7 @@ function Contact_page() {
                 {...register("name")}
                 className="py-2 px-2 outline-none   bg-white shadow-md rounded-md w-full"
               />
-              <p> { errors?.name?.message } </p>
+              <p className="text-red-800 font-semibold"> { errors?.name?.message } </p>
             </div>
             <div className="input3 px-4 m-3">
               <h1 className="pb-1 text-xl font-semibold">Bride's Name </h1>
@@ -89,27 +89,27 @@ function Contact_page() {
                 {...register("bridname")}
                 className="py-2 px-2 outline-none   bg-white shadow-md rounded-md w-full"
               />
-              <p> { errors?.bridname?.message } </p>
+              <p className="text-red-800 font-semibold"> { errors?.bridname?.message } </p>
             </div>
             <div className="input4 px-4 m-3">
               <h1 className="pb-1 text-xl font-semibold">Groom's Name </h1>
               <input
                 type="text"
                 name="groomname"
-                {...register("bridname")}
+                {...register("groomname")}
                 className="py-2 px-2 outline-none   bg-white shadow-md rounded-md w-full"
               />
-              <p> { errors?.groomname?.message } </p>
+              <p className="text-red-800 font-semibold"> { errors?.groomname?.message } </p>
             </div>
             <div className="input5 px-4 m-3">
               <h1 className="pb-1 text-xl font-semibold">Wedding Date </h1>
               <input
                 type="text"
                 name="weddingdate"
-                {...register("bridname")}
+                {...register("weddingdate")}
                 className="py-2 px-2 outline-none   bg-white shadow-md rounded-md w-full"
               />
-              <p> { errors?.weddingdate?.message } </p>
+              <p className="text-red-800 font-semibold"> { errors?.weddingdate?.message } </p>
             </div>
             <div className="input6 px-4 m-3">
               <h1 className="pb-1 text-xl font-semibold">
@@ -118,15 +118,15 @@ function Contact_page() {
               <input
                 type="text"
                 name="weddinglocation"
-                {...register("bridname")}
+                {...register("weddinglocation")}
                 className="py-2 px-2 outline-none  bg-white shadow-md rounded-md w-full"
               />
-              <p> { errors?.weddinglocation?.message } </p>
+              <p className="text-red-800 font-semibold"> { errors?.weddinglocation?.message } </p>
             </div>
             {/* second */}
           </div>
           <div
-            onSubmit={handleSubmit(submitform)}
+           
             className="inputs3_col  grid grid-cols-1 md:grid-cols-3"
           >
             <div className="input1 px-4 m-3">
@@ -134,20 +134,20 @@ function Contact_page() {
               <input
                 type="text"
                 name="days"
-                {...register("bridname")}
+                {...register("days")}
                 className="py-2 px-2 outline-none bg-white shadow-md rounded-md w-full"
               />
-              <p> { errors?.days?.message } </p>
+              <p className="text-red-800 font-semibold"> { errors?.days?.message } </p>
             </div>
             <div className="input1 px-4 m-3">
               <h1 className="pb-1 text-xl font-semibold">No. of functions </h1>
               <input
                 type="text"
                 name="nooffunction"
-                {...register("bridname")}
+                {...register("nooffunction")}
                 className="py-2 px-2 outline-none bg-white shadow-md rounded-md w-full"
               />
-              <p> { errors?.nooffunction?.message } </p>
+              <p className="text-red-800 font-semibold"> { errors?.nooffunction?.message } </p>
             </div>
             <div className="input1 px-4 m-3">
               <h1 className="pb-1 text-xl font-semibold">
@@ -156,20 +156,21 @@ function Contact_page() {
               <input
                 type="text"
                 name="guestnumber"
-                {...register("bridname")}
+                {...register("guestnumber")}
                 className="py-2 px-2 outline-none   bg-white shadow-md rounded-md w-full"
               />
-              <p> { errors?.guestnumber?.message } </p>
+              <p className="text-red-800 font-semibold"> { errors?.guestnumber?.message } </p>
             </div>
           </div>
           <div className="radio_buttons">
             <div className="radio1 p-6 ">
               <h1 className="text-xl font-semibold mb-2">Requirement </h1>
-              <div className="parall_radio  gap-6 ml-4 grid grid-cols-1 md:grid-cols-2 ">
+              <div className="parall_radio cursor-pointer  gap-6 ml-4 grid grid-cols-1 md:grid-cols-2 ">
                 <div className="first flex gap-3  ">
+                  
                   <input
                     type="checkbox"
-                    className=" size-6 checked:bg-blue-500 ..."
+                    className=" cursor-pointer size-6 checked:bg-blue-500 ..."
                   />
                   <div className="text-xl">Photography</div>
                 </div>
@@ -183,7 +184,7 @@ function Contact_page() {
               </div>
             </div>
 
-            <div className="radio2_col px-6 pb-4 ">
+            <div className="radio2_col px-6 pb-4  cursor-pointer">
               <h1 className="text-xl font-semibold mb-2">
                 Additional requirements{" "}
               </h1>
@@ -231,7 +232,7 @@ function Contact_page() {
               </div>
 
               {/* third */}
-              <div className="radio3_col  pb-4 ">
+              <div className="radio3_col  pb-4 cursor-pointer ">
                 <h1 className="text-xl font-semibold my-2">
                   Video Requirement{" "}
                 </h1>
@@ -239,14 +240,14 @@ function Contact_page() {
                   <div className="first flex gap-3  ">
                     <input
                       type="checkbox"
-                      className=" size-6 checked:bg-blue-500 ..."
+                      className=" size-6 cursor-pointer checked:bg-blue-500 ..."
                     />
                     <div className="text-xl">Trailer (4 - 5 mins)</div>
                   </div>
                   <div className="second flex gap-3 ">
                     <input
                       type="checkbox"
-                      className=" size-6 checked:bg-blue-500 ..."
+                      className=" size-6 cursor-pointer checked:bg-blue-500 ..."
                     />
                     <div className="text-xl">Long film (15 - 20 mins)</div>
                   </div>
@@ -277,7 +278,7 @@ function Contact_page() {
               </div>
               {/* radio_end */}
 
-              <div onSubmit={handleSubmit(submitform)} className="inputs">
+              <div  className="inputs">
                 <div className="input1  m-3">
                   <h1 className="pb-1 text-xl font-semibold">
                     If you have an approximate budget that you are working with,
@@ -286,7 +287,7 @@ function Contact_page() {
                   <input
                     type="text"
                     name="budget"
-                    {...register("bridname")}
+                    {...register("budget")}
                     className="py-2 px-4 outline-none bg-white shadow-md rounded-md md:w-[30em]  w-full lg:w-[45em]"
                   />
                   <p> { errors?.budget?.message } </p>
@@ -297,11 +298,11 @@ function Contact_page() {
                   </h1>
                   <input
                     type="text"
-                    {...register("bridname")}
+                    {...register("emailforcommunication")}
                     name="emailforcommunication"
                     className="py-2 px-4 outline-none md:w-[30em]  w-full bg-white shadow-md rounded-md lg:w-[45em] "
                   />
-                  <p> { errors?.emailforcommunication?.message } </p>
+                  <p className="text-red-800 font-semibold"> { errors?.emailforcommunication?.message } </p>
                 </div>
               </div>
               <div onSubmit={handleSubmit(submitform)} className="box">
@@ -320,21 +321,22 @@ function Contact_page() {
                     <input
                       type="text"
                       name="countrycode"
-                      {...register("bridname")}
+                      {...register("countrycode")}
                       className="py-2 px-4 outline-none bg-white shadow-md rounded-r-md "
                     />
-                    <p> { errors?.countrycode?.message } </p>
+                  
                   </div>
+                  <p className="text-red-800 font-semibold"> { errors?.countrycode?.message } </p>
                 </div>
                 <div className="input1  m-3">
                   <h1 className="pb-1 text-xl font-semibold">Phone number </h1>
                   <input
                     type="text"
                     name="phonenumber"
-                    {...register("bridname")}
+                    {...register("phonenumber")}
                     className="py-2 px-4 outline-none bg-white w-full shadow-md rounded-md md:w-[400px]"
                   />
-                  <p> { errors?.phonenumber?.message } </p>
+                  <p className="text-red-800 font-semibold"> { errors?.phonenumber?.message } </p>
                 </div>
               </div>
               <div className="send flex justify-center py-8">
@@ -348,7 +350,7 @@ function Contact_page() {
         </div>
         <Alternative_contact_page />
       </div>
-    </div>
+    </form>
   );
 }
 
