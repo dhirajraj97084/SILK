@@ -26,7 +26,7 @@ const schema = yup.object().shape({
 
 
 function Contact_page() {
-  const { register, handleSubmit, errors } = useForm({
+  const { register, handleSubmit, formState: { errors } } = useForm({
     resolver: yupResolver(schema),
   });
   // functin_submitform
@@ -64,10 +64,10 @@ function Contact_page() {
               <input
                 type="text"
                 name="email"
-                ref={register}
+                {...register("email")}
                 className="py-2 px-2 outline-none   bg-white shadow-md rounded-md w-full"
               />
-              <p> { errors.email?.message } </p>
+              <p> { errors?.email?.message } </p>
             </div>
             <div className="input2 px-4 m-3">
               <h1 className="pb-1 text-xl font-semibold">
@@ -76,40 +76,40 @@ function Contact_page() {
               <input
                 type="text"
                 name="name"
-                ref={register}
+                {...register("name")}
                 className="py-2 px-2 outline-none   bg-white shadow-md rounded-md w-full"
               />
-              <p> { errors.name?.message } </p>
+              <p> { errors?.name?.message } </p>
             </div>
             <div className="input3 px-4 m-3">
               <h1 className="pb-1 text-xl font-semibold">Bride's Name </h1>
               <input
                 type="text"
                 name="bridname"
-                ref={register}
+                {...register("bridname")}
                 className="py-2 px-2 outline-none   bg-white shadow-md rounded-md w-full"
               />
-              <p> { errors.bridname?.message } </p>
+              <p> { errors?.bridname?.message } </p>
             </div>
             <div className="input4 px-4 m-3">
               <h1 className="pb-1 text-xl font-semibold">Groom's Name </h1>
               <input
                 type="text"
                 name="groomname"
-                ref={register}
+                {...register("bridname")}
                 className="py-2 px-2 outline-none   bg-white shadow-md rounded-md w-full"
               />
-              <p> { errors.groomname?.message } </p>
+              <p> { errors?.groomname?.message } </p>
             </div>
             <div className="input5 px-4 m-3">
               <h1 className="pb-1 text-xl font-semibold">Wedding Date </h1>
               <input
                 type="text"
                 name="weddingdate"
-                ref={register}
+                {...register("bridname")}
                 className="py-2 px-2 outline-none   bg-white shadow-md rounded-md w-full"
               />
-              <p> { errors.weddingdate?.message } </p>
+              <p> { errors?.weddingdate?.message } </p>
             </div>
             <div className="input6 px-4 m-3">
               <h1 className="pb-1 text-xl font-semibold">
@@ -118,10 +118,10 @@ function Contact_page() {
               <input
                 type="text"
                 name="weddinglocation"
-                ref={register}
+                {...register("bridname")}
                 className="py-2 px-2 outline-none  bg-white shadow-md rounded-md w-full"
               />
-              <p> { errors.weddinglocation?.message } </p>
+              <p> { errors?.weddinglocation?.message } </p>
             </div>
             {/* second */}
           </div>
@@ -134,20 +134,20 @@ function Contact_page() {
               <input
                 type="text"
                 name="days"
-                ref={register}
+                {...register("bridname")}
                 className="py-2 px-2 outline-none bg-white shadow-md rounded-md w-full"
               />
-              <p> { errors.days?.message } </p>
+              <p> { errors?.days?.message } </p>
             </div>
             <div className="input1 px-4 m-3">
               <h1 className="pb-1 text-xl font-semibold">No. of functions </h1>
               <input
                 type="text"
                 name="nooffunction"
-                ref={register}
+                {...register("bridname")}
                 className="py-2 px-2 outline-none bg-white shadow-md rounded-md w-full"
               />
-              <p> { errors.nooffunction?.message } </p>
+              <p> { errors?.nooffunction?.message } </p>
             </div>
             <div className="input1 px-4 m-3">
               <h1 className="pb-1 text-xl font-semibold">
@@ -156,10 +156,10 @@ function Contact_page() {
               <input
                 type="text"
                 name="guestnumber"
-                ref={register}
+                {...register("bridname")}
                 className="py-2 px-2 outline-none   bg-white shadow-md rounded-md w-full"
               />
-              <p> { errors.guestnumber?.message } </p>
+              <p> { errors?.guestnumber?.message } </p>
             </div>
           </div>
           <div className="radio_buttons">
@@ -286,10 +286,10 @@ function Contact_page() {
                   <input
                     type="text"
                     name="budget"
-                    ref={register}
+                    {...register("bridname")}
                     className="py-2 px-4 outline-none bg-white shadow-md rounded-md md:w-[30em]  w-full lg:w-[45em]"
                   />
-                  <p> { errors.budget?.message } </p>
+                  <p> { errors?.budget?.message } </p>
                 </div>
                 <div className="input1  m-3">
                   <h1 className="pb-1 text-xl font-semibold">
@@ -297,11 +297,11 @@ function Contact_page() {
                   </h1>
                   <input
                     type="text"
-                    ref={register}
+                    {...register("bridname")}
                     name="emailforcommunication"
                     className="py-2 px-4 outline-none md:w-[30em]  w-full bg-white shadow-md rounded-md lg:w-[45em] "
                   />
-                  <p> { errors.emailforcommunication?.message } </p>
+                  <p> { errors?.emailforcommunication?.message } </p>
                 </div>
               </div>
               <div onSubmit={handleSubmit(submitform)} className="box">
@@ -320,10 +320,10 @@ function Contact_page() {
                     <input
                       type="text"
                       name="countrycode"
-                      ref={register}
+                      {...register("bridname")}
                       className="py-2 px-4 outline-none bg-white shadow-md rounded-r-md "
                     />
-                    <p> { errors.countrycode?.message } </p>
+                    <p> { errors?.countrycode?.message } </p>
                   </div>
                 </div>
                 <div className="input1  m-3">
@@ -331,10 +331,10 @@ function Contact_page() {
                   <input
                     type="text"
                     name="phonenumber"
-                    ref={register}
+                    {...register("bridname")}
                     className="py-2 px-4 outline-none bg-white w-full shadow-md rounded-md md:w-[400px]"
                   />
-                  <p> { errors.phonenumber?.message } </p>
+                  <p> { errors?.phonenumber?.message } </p>
                 </div>
               </div>
               <div className="send flex justify-center py-8">
