@@ -103,8 +103,9 @@ function Contact_page() {
             </div>
             <div className="input5 px-4 m-3">
               <h1 className="pb-1 text-xl font-semibold">Wedding Date </h1>
+              
               <input
-                type="text"
+                type="date"
                 name="weddingdate"
                 {...register("weddingdate")}
                 className="py-2 px-2 outline-none   bg-white shadow-md rounded-md w-full"
@@ -116,7 +117,7 @@ function Contact_page() {
                 Wedding Location / Venue{" "}
               </h1>
               <input
-                type="text"
+                type="location"
                 name="weddinglocation"
                 {...register("weddinglocation")}
                 className="py-2 px-2 outline-none  bg-white shadow-md rounded-md w-full"
@@ -132,7 +133,7 @@ function Contact_page() {
             <div className="input1 px-4 m-3">
               <h1 className="pb-1 text-xl font-semibold">Number of Days </h1>
               <input
-                type="text"
+                type="number"
                 name="days"
                 {...register("days")}
                 className="py-2 px-2 outline-none bg-white shadow-md rounded-md w-full"
@@ -142,7 +143,7 @@ function Contact_page() {
             <div className="input1 px-4 m-3">
               <h1 className="pb-1 text-xl font-semibold">No. of functions </h1>
               <input
-                type="text"
+                type="number"
                 name="nooffunction"
                 {...register("nooffunction")}
                 className="py-2 px-2 outline-none bg-white shadow-md rounded-md w-full"
@@ -154,7 +155,7 @@ function Contact_page() {
                 Expected number of guest{" "}
               </h1>
               <input
-                type="text"
+                type="number"
                 name="guestnumber"
                 {...register("guestnumber")}
                 className="py-2 px-2 outline-none   bg-white shadow-md rounded-md w-full"
@@ -170,8 +171,11 @@ function Contact_page() {
                   
                   <input
                     type="checkbox"
+                    name="photography"
+                    {...register("photography")}
                     className=" cursor-pointer size-6 checked:bg-blue-500 ..."
                   />
+                  
                   <div className="text-xl">Photography</div>
                 </div>
                 <div className="second flex gap-3 ">
