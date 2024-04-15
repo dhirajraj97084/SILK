@@ -290,7 +290,7 @@ function Contact_page() {
                     {...register("budget")}
                     className="py-2 px-4 outline-none bg-white shadow-md rounded-md md:w-[30em]  w-full lg:w-[45em]"
                   />
-                  <p> { errors?.budget?.message } </p>
+                  <p className="text-red-800 font-semibold"> { errors?.budget?.message } </p>
                 </div>
                 <div className="input1  m-3">
                   <h1 className="pb-1 text-xl font-semibold">
