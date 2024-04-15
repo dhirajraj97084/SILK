@@ -8,6 +8,7 @@ import * as yup from "yup";
 
 // create_schema for contact page
 const schema = yup.object().shape({
+
   email : yup.string().email().required(),
   name: yup.string().required(),
   bridname: yup.string().required(),
@@ -21,6 +22,7 @@ const schema = yup.object().shape({
   emailforcommunication: yup.string().required(),
   countrycode: yup.string().max(2).required(),
   phonenumber: yup.string().max(10).required(),
+
 });
 
 
@@ -64,7 +66,8 @@ function Contact_page() {
               <input
                 type="text"
                 name="email"
-                ref={register}
+                // ref={register}
+                {...register('email')}
                 className="py-2 px-2 outline-none   bg-white shadow-md rounded-md w-full"
               />
               <p> { errors.email?.message } </p>
@@ -76,7 +79,8 @@ function Contact_page() {
               <input
                 type="text"
                 name="name"
-                ref={register}
+                // ref={register}
+                {...register('name')}
                 className="py-2 px-2 outline-none   bg-white shadow-md rounded-md w-full"
               />
               <p> { errors.name?.message } </p>
@@ -86,7 +90,8 @@ function Contact_page() {
               <input
                 type="text"
                 name="bridname"
-                ref={register}
+                // ref={register}
+                {...register('bridname')}
                 className="py-2 px-2 outline-none   bg-white shadow-md rounded-md w-full"
               />
               <p> { errors.bridname?.message } </p>
@@ -96,7 +101,8 @@ function Contact_page() {
               <input
                 type="text"
                 name="groomname"
-                ref={register}
+                // ref={register}
+                {...register('groomname')}
                 className="py-2 px-2 outline-none   bg-white shadow-md rounded-md w-full"
               />
               <p> { errors.groomname?.message } </p>
@@ -106,7 +112,8 @@ function Contact_page() {
               <input
                 type="text"
                 name="weddingdate"
-                ref={register}
+                // ref={register}
+                {...register('weddingdate')}
                 className="py-2 px-2 outline-none   bg-white shadow-md rounded-md w-full"
               />
               <p> { errors.weddingdate?.message } </p>
@@ -118,7 +125,8 @@ function Contact_page() {
               <input
                 type="text"
                 name="weddinglocation"
-                ref={register}
+                // ref={register}
+                {...register('weddinglocation')}
                 className="py-2 px-2 outline-none  bg-white shadow-md rounded-md w-full"
               />
               <p> { errors.weddinglocation?.message } </p>
@@ -134,7 +142,8 @@ function Contact_page() {
               <input
                 type="text"
                 name="days"
-                ref={register}
+                // ref={register}
+                {...register('days')}
                 className="py-2 px-2 outline-none bg-white shadow-md rounded-md w-full"
               />
               <p> { errors.days?.message } </p>
@@ -144,7 +153,8 @@ function Contact_page() {
               <input
                 type="text"
                 name="nooffunction"
-                ref={register}
+                // ref={register}
+                {...register('nooffunction')}
                 className="py-2 px-2 outline-none bg-white shadow-md rounded-md w-full"
               />
               <p> { errors.nooffunction?.message } </p>
@@ -156,7 +166,8 @@ function Contact_page() {
               <input
                 type="text"
                 name="guestnumber"
-                ref={register}
+                // ref={register}
+                {...register('guestnumber')}
                 className="py-2 px-2 outline-none   bg-white shadow-md rounded-md w-full"
               />
               <p> { errors.guestnumber?.message } </p>
@@ -286,7 +297,8 @@ function Contact_page() {
                   <input
                     type="text"
                     name="budget"
-                    ref={register}
+                    // ref={register}
+                    {...register('budget')}
                     className="py-2 px-4 outline-none bg-white shadow-md rounded-md md:w-[30em]  w-full lg:w-[45em]"
                   />
                   <p> { errors.budget?.message } </p>
@@ -297,7 +309,8 @@ function Contact_page() {
                   </h1>
                   <input
                     type="text"
-                    ref={register}
+                    // ref={register}
+                    {...register('emailforcommunication')}
                     name="emailforcommunication"
                     className="py-2 px-4 outline-none md:w-[30em]  w-full bg-white shadow-md rounded-md lg:w-[45em] "
                   />
@@ -320,7 +333,8 @@ function Contact_page() {
                     <input
                       type="text"
                       name="countrycode"
-                      ref={register}
+                      // ref={register}
+                      {...register('countrycode')}
                       className="py-2 px-4 outline-none bg-white shadow-md rounded-r-md "
                     />
                     <p> { errors.countrycode?.message } </p>
@@ -331,7 +345,8 @@ function Contact_page() {
                   <input
                     type="text"
                     name="phonenumber"
-                    ref={register}
+                    // ref={register}
+                    {...register('phonenumber')}
                     className="py-2 px-4 outline-none bg-white w-full shadow-md rounded-md md:w-[400px]"
                   />
                   <p> { errors.phonenumber?.message } </p>
