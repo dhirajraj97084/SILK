@@ -35,21 +35,21 @@ const goa_list = [
       "https://www.silkphotos.com/wp-content/uploads/bb-plugin/cache/goa-wedding-photography_vivek_sarah-Sephi-Bergerson-6-1-landscape-04be3541ed994739247e96ed930bbd45-.jpg",
     name: "SARAH & VIVEK",
     para: "Being based in Goa it is a bit surprising that I actually do not get to cover a destination wedding in Goa all that often. However, the ones I do get to attend usually turn out to be quite fantastic....",
-    src: "/p",
+    src: "/sarah",
   },
   {
     image:
       "https://www.silkphotos.com/wp-content/uploads/bb-plugin/cache/christian-wedding-in-south-goa-13-landscape-bcca12b1c455dc9c8d581fc95e493b0d-.jpg",
     name: "CLAYTON & ANN",
     para: "If you are planing a church wedding in Goa there are quite a few places to hold the ceremony. There is a small chapel at the top of a hill which remains locked most of the time..",
-    src: "/q",
+    src: "/clayton",
   },
   {
     image:
       "https://www.silkphotos.com/wp-content/uploads/bb-plugin/cache/intimate-wedding-in-goa-7-landscape-d013c0b83b54cb582c17d976bda861f9-.jpg",
     name: "LINDA & JÖERG",
     para: "Linda and Jöerg (pronounced like York) are both graphic designers based in Berlin and nothing about their wedding in Goa was ordinary in the way we might imagine it..",
-    src: "/r",
+    src: "/linda",
   },
   {
     image:

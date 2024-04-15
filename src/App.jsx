@@ -27,6 +27,9 @@ import Denny from './pages/state_wedding_page/goa_wedding/denny/Denny';
 import Dina from './pages/state_wedding_page/goa_wedding/dina/Dina';
 import Raahil from './pages/state_wedding_page/goa_wedding/raahil/Raahil';
 import Raahil2 from './pages/state_wedding_page/goa_wedding/raahil2/Raahil2';
+import SarahVivek from './pages/state_wedding_page/goa_wedding/sarah&Vivek/SarahVivek';
+import ClaytonAnn from './pages/state_wedding_page/goa_wedding/claytonAnn/ClaytonAnn';
+import LindaJoerg from './pages/state_wedding_page/goa_wedding/lindaJoerg/LindaJoerg';
 
 
 function App() {
@@ -49,6 +52,7 @@ function App() {
           <Route path='/two' element={<Two/>} />
           <Route path='/three' element={<Three/>} />
           <Route path='/four' element={<Four/>} />
+          
 
           <Route path='/family' element={<Family/>} />
         
@@ -64,6 +68,10 @@ function App() {
                <Route path='/dina' element={<Dina/>} />
                <Route path='/rahil' element={<Raahil/>} />
                <Route path='/rahiltwo' element={<Raahil2/>} />
+               <Route path='/sarah' element={<SarahVivek/>} />
+               <Route path='/clayton' element={<ClaytonAnn/>} />
+               <Route path='/linda' element={<LindaJoerg/>} />
+              
 
           <Route path='/udaipur' element={<Udaipur/>} />
           <Route path='/kerala' element={<Kerala/>} />
