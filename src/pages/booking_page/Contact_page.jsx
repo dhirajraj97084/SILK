@@ -8,10 +8,10 @@ import * as yup from "yup";
 
 // create_schema for contact page
 const schema = yup.object().shape({
+
   email : yup.string().email().required('please answer the question'),
   name: yup.string().required('please answer the question'),
   bridname: yup.string().required('please answer the question'),
-  requirement: yup.boolean().oneOf([true], 'You must select a checkbox'),
   groomname: yup.string().required('please answer the question'),
   weddingdate: yup.string().required('please answer the question'),
   weddinglocation: yup.string().required('please answer the question'),
@@ -22,13 +22,16 @@ const schema = yup.object().shape({
   emailforcommunication: yup.string().required('please answer the question'),
   countrycode: yup.string().max(2).required('please answer the question'),
   phonenumber: yup.string().max(10).required('please answer the question'),
+ 
 });
+
 
 
 
 function Contact_page() {
   const { register, handleSubmit, formState: { errors } } = useForm({
     resolver: yupResolver(schema),
+  
   });
   // functin_submitform
   const submitform = (data) => {
@@ -178,7 +181,9 @@ function Contact_page() {
                   />
                   
                   <div className="text-xl">Photography</div>
+
                 </div>
+
                 <div className="second flex gap-3 ">
                   <input
                     type="checkbox"

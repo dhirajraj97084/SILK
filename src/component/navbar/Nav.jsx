@@ -50,7 +50,6 @@ const navListMenuItems = [
     icon: SunIcon,
     src:"/gallery",
   },
-
   {
     title: "FAIMLY PORTRAITS",
     description: "Find the perfect solution for your needs.",
@@ -63,6 +62,7 @@ const navListMenuItems = [
     icon: PhoneIcon,
     src:"/learn",
   },
+  
 ];
 
 
