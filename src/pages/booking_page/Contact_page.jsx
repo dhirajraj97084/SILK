@@ -11,6 +11,7 @@ const schema = yup.object().shape({
   email : yup.string().email().required('please answer the question'),
   name: yup.string().required('please answer the question'),
   bridname: yup.string().required('please answer the question'),
+  requirement: yup.boolean().oneOf([true], 'You must select a checkbox'),
   groomname: yup.string().required('please answer the question'),
   weddingdate: yup.string().required('please answer the question'),
   weddinglocation: yup.string().required('please answer the question'),
@@ -171,8 +172,8 @@ function Contact_page() {
                   
                   <input
                     type="checkbox"
-                    name="photography"
-                    {...register("photography")}
+                    name="requirement"
+                    {...register("requirement")}
                     className=" cursor-pointer size-6 checked:bg-blue-500 ..."
                   />
                   
@@ -181,10 +182,13 @@ function Contact_page() {
                 <div className="second flex gap-3 ">
                   <input
                     type="checkbox"
+                    name="requirement"
+                    {...register("requirement")}
                     className=" size-6 checked:bg-blue-500 ..."
                   />
                   <div className="text-xl">Cinematography</div>
                 </div>
+                <p className="text-red-800 font-semibold"> { errors?.requirement?.message } </p>
               </div>
             </div>
 
