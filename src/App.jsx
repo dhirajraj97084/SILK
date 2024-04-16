@@ -30,12 +30,14 @@ import Raahil2 from './pages/state_wedding_page/goa_wedding/raahil2/Raahil2';
 import SarahVivek from './pages/state_wedding_page/goa_wedding/sarah&Vivek/SarahVivek';
 import ClaytonAnn from './pages/state_wedding_page/goa_wedding/claytonAnn/ClaytonAnn';
 import LindaJoerg from './pages/state_wedding_page/goa_wedding/lindaJoerg/LindaJoerg';
+import ScrollTop from './component/scrollTop/ScrollTop';
 
 
 function App() {
   return (
     <div>
       <Router>
+        <ScrollTop/>
         <Routes>
           {/* paging */}
           <Route path='/' element={<Home/>} />
