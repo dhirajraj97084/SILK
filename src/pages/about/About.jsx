@@ -2,8 +2,7 @@ import React, { useState } from 'react'
 import Layout from '../../component/layout/Layout'
 import { Carousel } from '@material-tailwind/react'
 import { FaQuoteLeft } from 'react-icons/fa'
-import Questions from './Questions'
-import Faq from '../faq/Faq'
+
 
 function About() {
   const [openIndex, setOpenIndex] = useState(null);
