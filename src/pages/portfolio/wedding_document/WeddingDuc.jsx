@@ -74,11 +74,17 @@ const imageList=[
 function WeddingDuc() {
   return (
     <Layout>
-      <div className="container main mx-auto py-8">
-      <div className="images grid md:grid-cols-3 lg:grid-cols-4  grid-cols-2 px-4 gap-2">
+      <div className="  font-serif  ">
+        <div className="content text-center bg-gray-100  h-80 flex justify-center items-center  ">
+         <div className="div">
+         <h1 className='text-center  text-3xl md:text-5xl font-black'>Wedding Documentary </h1>
+          <p className='text-balance text-xl pt-8 text-start px-4 md:text-center'>Step into a world where every moment tells a story. Our wedding documentaries preserve the magic of your special day, capturing the emotions, traditions, and unique details that make your celebration unforgettable. Let us turn your wedding into a timeless film that you'll cherish forever.</p>
+         </div>
+        </div>
+      <div className="images grid md:grid-cols-2 py-3  grid-cols-1 px-4 gap-2 container main mx-auto">
          {imageList.map((item,index)=>(
             <div key={index} className="img">
-                <img className='h-[15em]' src={item.image} alt="img1" />
+                <img className='' src={item.image} alt="img1" />
             </div>
          ))}
       </div>

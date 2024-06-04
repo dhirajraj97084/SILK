@@ -17,12 +17,7 @@ import NoPage from './pages/nopage/NoPage';
 import WeddingDuc from './pages/portfolio/wedding_document/WeddingDuc';
 import CouplePortraits from './pages/portfolio/couples02/CouplePortraits';
 import Family from './pages/portfolio/family/Family';
-import FaqPage from './pages/resourceDrop/FaqPage';
-import ForCouples from './pages/resourceDrop/forCouples/ForCouples';
-import One from './pages/resourceDrop/forCouples/one/One';
-import Two from './pages/resourceDrop/forCouples/two/Two';
-import Three from './pages/resourceDrop/forCouples/three/Three';
-import Four from './pages/resourceDrop/forCouples/four/Four';
+
 import Denny from './pages/state_wedding_page/goa_wedding/denny/Denny';
 import Dina from './pages/state_wedding_page/goa_wedding/dina/Dina';
 import Raahil from './pages/state_wedding_page/goa_wedding/raahil/Raahil';
@@ -31,6 +26,9 @@ import SarahVivek from './pages/state_wedding_page/goa_wedding/sarah&Vivek/Sarah
 import ClaytonAnn from './pages/state_wedding_page/goa_wedding/claytonAnn/ClaytonAnn';
 import LindaJoerg from './pages/state_wedding_page/goa_wedding/lindaJoerg/LindaJoerg';
 import ScrollTop from './component/scrollTop/ScrollTop';
+import AnalisaAndJaydev from './pages/state_wedding_page/goa_wedding/analisajaydev/AnalisaAndJaydev';
+import UditShivani from './pages/state_wedding_page/goa_wedding/uditAndShivani/UditShivani';
+import Faq from './pages/faq/Faq';
 
 
 function App() {
@@ -46,17 +44,13 @@ function App() {
           <Route path='/*' element={<NoPage/>} />
           {/* portfolio */}
           <Route path='/weddingduct' element={<WeddingDuc/>} />
-          <Route path='/coupleport' element={<CouplePortraits/>} />
-          {/* resource */}
-          <Route path='/faq' element={<FaqPage/>} />
-          <Route path='/forcouples' element={<ForCouples/>} />
-          <Route path='/one' element={<One/>} />
-          <Route path='/two' element={<Two/>} />
-          <Route path='/three' element={<Three/>} />
-          <Route path='/four' element={<Four/>} />
+          <Route path='/coupleport' element={<CouplePortraits/>} />      
+          
+          
           
 
           <Route path='/family' element={<Family/>} />
+          <Route path='/faq' element={<Faq/>} />
         
            {/* herosection */}
           <Route path='/booking' element={<Booking_Page/>} />
@@ -69,6 +63,8 @@ function App() {
                <Route path='/denny' element={<Denny/>} />
                <Route path='/dina' element={<Dina/>} />
                <Route path='/rahil' element={<Raahil/>} />
+               <Route path='/analisa' element={<AnalisaAndJaydev/>} />
+               <Route path='/udit' element={<UditShivani/>} />
                <Route path='/rahiltwo' element={<Raahil2/>} />
                <Route path='/sarah' element={<SarahVivek/>} />
                <Route path='/clayton' element={<ClaytonAnn/>} />

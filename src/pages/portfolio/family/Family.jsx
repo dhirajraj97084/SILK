@@ -16,7 +16,7 @@ function Family() {
     transition={{type : "tween", duration : 2}}
     autoplayDelay={5000}
     className=" ">
-        <div className="relative h-full w-full">
+        <div className="relative h-full w-full ">
         <img
           src="https://www.silkphotos.com/wp-content/uploads/2020/07/wedding-photography-portfolio_Sephi-Bergerson-79.jpg"
           alt="image 2"
@@ -28,7 +28,7 @@ function Family() {
            <Typography
               variant="h1"
               color="white"
-              className="my-4 text-xl md:text-2xl lg:text-4xl  text-center"
+              className="my-4 text-xl md:text-2xl lg:text-4xl  text-center font-serif"
             >
     FAMILY PORTRAIT PHOTOGRAPHY
             </Typography>
@@ -37,9 +37,9 @@ function Family() {
             <Typography
               variant="lead"
               color="white"
-              className="mb-12 opacity-80 text-center"
+              className="mb-12 opacity-80 text-center container mx-auto font-serif"
             >
-         Preserving Your Family Legacy
+        Capture the love and joy that bind your family together. Our family portrait sessions are designed to highlight each unique bond and personality, creating cherished images that tell your family's story. Let us help you preserve these special moments for generations to come
             </Typography> 
             </Link>             
           </div>
@@ -59,7 +59,7 @@ function Family() {
            <Typography
               variant="h1"
               color="white"
-              className="my-4 text-xl md:text-2xl lg:text-4xl  text-center"
+              className="my-4 text-xl md:text-2xl lg:text-4xl  text-center font-serif"
             >
           FAMILY PORTRAIT PHOTOGRAPHY
             </Typography>
@@ -68,9 +68,9 @@ function Family() {
             <Typography
               variant="lead"
               color="white"
-              className="mb-12 opacity-80 text-center"
+              className="mb-12 opacity-80 text-center container mx-auto font-serif"
             >
-              Preserving Your Family Legacy
+              Capture the love and joy that bind your family together. Our family portrait sessions are designed to highlight each unique bond and personality, creating cherished images that tell your family's story. Let us help you preserve these special moments for generations to come
             </Typography> 
             </Link>             
           </div>
@@ -89,7 +89,7 @@ function Family() {
            <Typography
               variant="h1"
               color="white"
-              className="my-4 text-xl md:text-2xl lg:text-4xl  text-center"
+              className="my-4 text-xl md:text-2xl lg:text-4xl  text-center font-serif"
             >
        FAMILY PORTRAIT PHOTOGRAPHY
             </Typography>
@@ -98,9 +98,9 @@ function Family() {
             <Typography
               variant="lead"
               color="white"
-              className="mb-12 opacity-80 text-center"
+              className="mb-12 opacity-80 text-center container mx-auto font-serif"
             >
-          Preserving Your Family Legacy
+         Capture the love and joy that bind your family together. Our family portrait sessions are designed to highlight each unique bond and personality, creating cherished images that tell your family's story. Let us help you preserve these special moments for generations to come
             </Typography> 
             </Link>             
           </div>
@@ -108,7 +108,7 @@ function Family() {
       </div>
     </Carousel>
     <div className="container mx-auto">
-        <div className="box px-3 py-6 ">
+        <div className="box px-3 py-6  font-serif">
            <h1 className='text-center text-2xl md:text-3xl text-black font-serif pb-2'>LUXURY FAMILY PORTRAIT PHOTOGRAPHY IN GOA</h1>
            <h2 className='text-center text-xl md:text-xl text-black/70 font-serif pb-2'>~ A FAMILY LEGACY ~</h2>
            <p className='pb-4'>Are you looking for a Family Portrait Photography during your visit to Goa? Envisioning a timeless portrayal of your family's unique bond, captured in the backdrop of luxurious settings? If you're seeking an exceptional photographer to freeze those cherished moments, look no further. Welcome to the world of luxury family portraits, where Sephi Bergerson, an acclaimed international photographer, brings his artistic prowess to craft exquisite visual narratives for your family.</p>

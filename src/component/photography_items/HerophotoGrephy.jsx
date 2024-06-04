@@ -110,14 +110,14 @@ function HerophotoGrephy() {
                 <FaQuoteLeft className="text-yellow-600 text-4xl " />
               </div>
               <div className="box1">
-                <h1 className="text-xl md:text-2xl text-gray-600 ">
-                I can not forget the moment and what you said to me at that time regarding the picture you wanted to capture for us forever. You are very sensitive towards your work. We can never forget the moments you captured for all of us. I am grateful to you forever.
+                <h1 className="text-xl font-serif text-gray-600 ">
+                Our Indian wedding photos are a masterpiece! The vibrant colors, emotional moments, and traditional details were all perfectly captured. The photographer truly understood the essence of our cultural celebration.
                 </h1>
               
               </div>
             </div>
           </div>
-          <ImageScroll/>
+          {/* <ImageScroll/> */}
         </div>
       </div>
     </div>

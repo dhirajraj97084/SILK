@@ -10,15 +10,13 @@ const goa_list = [
     src: "/denny",
   },
   {
-    image:
-      "https://www.silkphotos.com/wp-content/uploads/bb-plugin/cache/Goa-wedding-photographer-2520160412-1200x800-landscape-14327ab731041fafaf7e49b5bb04d75f-.jpg",
+    image:"https://www.silkphotos.com/wp-content/uploads/bb-plugin/cache/Goa-wedding-photographer-2520160412-1200x800-landscape-14327ab731041fafaf7e49b5bb04d75f-.jpg",
     name: "DINA & CARL",
     para: "I met Dina and Carl a few months ago when they came to visit and finalise the arrangements for their Goa beach wedding at the Taj Exotica resort in south Goa.....",
     src: "/dina",
   },
   {
-    image:
-      "https://www.silkphotos.com/wp-content/uploads/bb-plugin/cache/857_SILK_Sephi_20151106-2-landscape-b387f0f16d48f8be44dcf9ae5c8a38cc-.jpg",
+    image:"https://www.silkphotos.com/wp-content/uploads/bb-plugin/cache/857_SILK_Sephi_20151106-2-landscape-b387f0f16d48f8be44dcf9ae5c8a38cc-.jpg",
     name: "RAAHIL & PIA (PART 2)",
     para: "Last post was all about the first part of Raahil & Pia’s stunning destination wedding in Goa; the Champaign lunch at the forest, the Teeka and engagement on the beach, and the after party....",
     src: "/rahil",
@@ -56,7 +54,7 @@ const goa_list = [
       "https://www.silkphotos.com/wp-content/uploads/bb-plugin/cache/Beach-wedding-in-Goa_101210_SB20916-1-1200x800-landscape-c1a7708f9ae8036911e6ecf14b3f51d7-.jpg",
     name: "UDIT & SHIVANI",
     para: "There are really only two kinds of weddings that happen in Goa: a traditional Christian church wedding or destination weddings. The first type of wedding, as beautiful as it can be..",
-    src: "/z",
+    src: "/udit",
   },
 
   {
@@ -64,7 +62,7 @@ const goa_list = [
       "https://www.silkphotos.com/wp-content/uploads/bb-plugin/cache/Traditional-Catholic-wedding-in-Goa-12-landscape-9e0116ca66a6a4ca5f6273f292f4a753-.jpg",
     name: "ANALISA & JAYDEV",
     para: "When one thinks of a wedding in Goa it is very likely that the first thing that comes to mind would be a beach wedding somewhere under the coconut trees..",
-    src: "/x",
+    src: "/analisa",
   },
   {
     image:

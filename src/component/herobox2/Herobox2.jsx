@@ -10,15 +10,13 @@ function Herobox2() {
            <div className="text flex gap-4 mx-4 shadow-md bg-white py-12 md:px-12 px-6  ">
             <div className="logo"><FaQuoteLeft className='text-yellow-600 text-4xl ' /></div>
             <div className="box1">
-            <h1 className='text-xl md:text-2xl text-gray-600 '>From the first day we met you I felt an instant connection warmth and love for you and that was the most important for us as it felt totally natural and normal to have you at the wedding.</h1>
-            <h2 className='mt-2 text-gray-700'>NATASHA & NICK</h2>
+            <h1 className='text-xl font-serif text-gray-600 '>Incredible experience! The photographer captured every special moment of our wedding with such creativity and precision. The photos are absolutely stunning and tell our story beautifully. Highly recommended.</h1>        
             </div>
            </div>
-           <div className="text flex mx-4 gap-2 mt-3 shadow-md bg-white py-12 md:px-12 px-6  ">
+           <div className="text font-serif flex mx-4 gap-2 mt-3 shadow-md bg-white py-12 md:px-12 px-6  ">
             <div className="logo"><FaQuoteLeft className='text-yellow-600 text-4xl ' /></div>
             <div className="box2">
-            <h1 className='text-xl md:text-2xl text-gray-600 '>From the first day we met you I felt an instant connection warmth and love for you and that was the most important for us as it felt totally natural and normal to have you at the wedding.</h1>
-            <h2 className='mt-2 text-gray-700'>MOTHER OF THE BRIDE (ROHIT & JENN'S WEDDING)</h2>
+            <h1 className='text-xl  text-gray-600 '>We had our family portraits taken, and we couldn't be happier with the results. The photographer made us feel comfortable and truly captured our family's spirit. The pictures are now treasured memories on our walls</h1>
             </div>
            </div>
       </div>

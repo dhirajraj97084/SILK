@@ -28,7 +28,7 @@ import {
   TagIcon,
   UserGroupIcon,
 } from "@heroicons/react/24/solid";
-import ResouceDropDown from "../../pages/resourceDrop/ResouceDropDown";
+
 
 
 const navListMenuItems = [
@@ -56,12 +56,12 @@ const navListMenuItems = [
     icon: PhoneIcon,
     src:"/family",
   },
-  {
-    title: "BEHINDI THE INDIAN VEIL(BOOK)",
-    description: "Find the perfect solution for your needs.",
-    icon: PhoneIcon,
-    src:"/learn",
-  },
+  // {
+  //   title: "BEHINDI THE INDIAN VEIL(BOOK)",
+  //   description: "Find the perfect solution for your needs.",
+  //   icon: PhoneIcon,
+  //   src:"/learn",
+  // },
   
 ];
 
@@ -102,7 +102,7 @@ function NavListMenu() {
         <MenuHandler>
           <Typography as="div"  className="font-medium">
             <ListItem
-              className="flex items-center gap-2 py-2 pr-4 hover:underline decoration-blue-200 underline-offset-8 font-medium text-gray-900"
+              className="flex items-center gap-2 font-serif py-2 pr-4 hover:underline decoration-blue-200 underline-offset-8 font-medium text-gray-900"
               selected={isMenuOpen || isMobileMenuOpen}
               onClick={() => setIsMobileMenuOpen((cur) => !cur)}
             >
@@ -122,7 +122,7 @@ function NavListMenu() {
             </ListItem>
           </Typography>
         </MenuHandler>
-        <MenuList className="hidden max-w-screen-xl rounded-xl lg:block">
+        <MenuList className="hidden  max-w-screen-xl rounded-xl lg:block">
           <ul className="grid grid-cols-1 gap-y-2 outline-none outline-0">
             {renderItems}
           </ul>
@@ -139,7 +139,7 @@ function NavListMenu() {
 
 function NavList() {
   return (
-    <List className="mt-4 mb-6 p-0 lg:mt-0 lg:mb-0 lg:flex-row lg:p-1">
+    <List className="mt-4 mb-6 p-0 lg:mt-0 lg:mb-0 lg:flex-row lg:p-1 ">
       <Typography
         as="a"
         href="#"
@@ -147,10 +147,11 @@ function NavList() {
         className="font-medium"
       >
         <Link to={'/'}>
-        <ListItem className="flex items-center gap-2 py-2 pr-4 underline decoration-blue-200 underline-offset-8 ">HOME</ListItem>
+        <ListItem className="flex items-center gap-2 font-serif py-2 pr-4 underline decoration-blue-200 underline-offset-8 ">HOME
+        </ListItem>
         </Link>
       </Typography>
-      <hr className="lg:hidden" />
+      <hr className="lg:hidden " />
       <NavListMenu />
       <hr className="lg:hidden" />
       <Typography
@@ -160,17 +161,26 @@ function NavList() {
         className="font-medium"
       >
         <Link to={'/goa'}>
-        <ListItem className="flex items-center gap-2 py-2 pr-4 hover:underline decoration-blue-200 underline-offset-8 ">
+        <ListItem className="flex items-center gap-2 py-2 font-serif pr-4 hover:underline decoration-blue-200 underline-offset-8 ">
          WEDDING
         </ListItem>
         <hr className="lg:hidden" />
         </Link>
         
+      </Typography>       
+       <Typography
+        as="a"
+        href="#"
+        color="blue-gray"
+        className="font-medium"
+      >
+        <Link to={'/faq'}>
+        <ListItem className="flex items-center gap-2 py-2 font-serif pr-4 hover:underline decoration-blue-200 underline-offset-8 ">FAQ
+        </ListItem>
+        </Link>
       </Typography>
-       {/* <NavListMenu />  */}
-       <ResouceDropDown/>
-       
-       <hr className="lg:hidden" />
+      <hr className="lg:hidden" />      
+      
      
       <Typography
         as="a"
@@ -179,7 +189,7 @@ function NavList() {
         className="font-medium"
       >
        <Link to={'/about'}>
-       <ListItem className="flex items-center gap-2 py-2 pr-4 hover:underline decoration-blue-200 underline-offset-8">
+       <ListItem className="flex items-center gap-2 py-2 pr-4 font-serif hover:underline decoration-blue-200 underline-offset-8">
         ABOUT
         </ListItem>
         <hr className="lg:hidden" />
@@ -194,7 +204,7 @@ function NavList() {
         className="font-medium"
       >
      <Link to={'/contact'}>
-       <ListItem className="flex items-center gap-2 py-2 pr-4 hover:underline decoration-blue-200 underline-offset-8">
+       <ListItem className="flex items-center gap-2 py-2 pr-4 font-serif hover:underline decoration-blue-200 underline-offset-8">
           CONTACT
         </ListItem>
         <hr className="lg:hidden" />
@@ -239,7 +249,7 @@ export default function Nav() {
           className="mr-4 cursor-pointer py-1.5 lg:ml-2"
         >
           <Link to={'/'}>
-          <div className="logo flex items-center gap-1">
+          <div className="logo flex items-center gap-1 font-serif">
             <h1 className="bg-black/45 p-3 text-white  ">SILK</h1>
             <h2 className="text-sm">By <span className="md:text-xl font-medium  ">SEPHI BERGERSON</span> </h2>
           </div>

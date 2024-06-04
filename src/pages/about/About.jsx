@@ -1,10 +1,57 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Layout from '../../component/layout/Layout'
 import { Carousel } from '@material-tailwind/react'
 import { FaQuoteLeft } from 'react-icons/fa'
 import Questions from './Questions'
+import Faq from '../faq/Faq'
 
 function About() {
+  const [openIndex, setOpenIndex] = useState(null);
+  const faqs = [
+    {
+      question: ' 1. What makes Jatin Photography one of the best photographers in Dehradun?',
+      answer: 'At Jatin Photography, we pride ourselves on capturing timeless moments with a creative and personalized approach. Our attention to detail and commitment to excellence have earned us a reputation as one of the best photographers in Dehradun.',
+    },
+    {
+      question: '2. What types of photography services do you offer? ',
+      answer: 'Jatin Photography offers a wide range of services, including wedding photography, family portraits, couple sessions, event photography, and more. We tailor our services to meet your specific needs and ensure a memorable experience.',
+    },
+    {
+      question: '3. How can I book a session with Jatin Photography?',
+      answer: 'To book a session with Jatin Photography, you can contact us through our website or call us directly. We recommend booking in advance to secure your preferred date and time with the best photographers in Dehradun.',
+    },
+    {
+      question: '4. What should I expect during a wedding photography session with Jatin Photography?',
+      answer: 'During a wedding photography session, our team will capture every significant moment of your special day, from candid shots to posed portraits. We strive to document the essence of your celebration with stunning, high-quality images.',
+    },
+    {
+      question: '5. How long will it take to receive my photos?',
+      answer: ' The delivery time for your photos depends on the type of session and the volume of images. Typically, you can expect to receive your edited photos within 2-4 weeks. Jatin Photography ensures timely delivery without compromising on quality.',
+    },
+    {
+      question: '6. Can I see examples of your previous work?',
+      answer: 'Yes, you can view our portfolio on the Jatin Photography website. We showcase a variety of projects, including weddings, portraits, and events, highlighting why we are considered among the best photographers in Dehradun',
+    },
+    {
+      question: '7. Do you offer customized photography packages?',
+      answer: 'Absolutely! Jatin Photography offers customized packages to suit your unique requirements and budget. Contact us to discuss your needs, and we will create a personalized package just for you',
+    },
+    {
+      question: '8. What should I wear for my portrait session?',
+      answer: 'We recommend wearing comfortable, coordinated outfits that reflect your personal style. For family portraits, consider choosing complementary colors. Our team at Jatin Photography can provide additional guidance based on the location and theme of the shoot.',
+    },
+    {
+      question: '9. How do you ensure the quality of your photos?',
+      answer: 'Jatin Photography uses state-of-the-art equipment and professional editing software to ensure the highest quality photos. Our expertise and attention to detail guarantee stunning results that you',
+    },
+    {
+      question: '10. Do you travel for destination weddings and events?',
+      answer: 'Yes, Jatin Photography is available for destination weddings and events. We love capturing beautiful moments in new and exciting locations. Contact us to discuss travel arrangements and availability.',
+    },
+  ];
+  const toggleFAQ = (index) => {
+    setOpenIndex(openIndex === index ? null : index);
+  };
   return (
     <Layout>
       {/* carousal */}
@@ -68,21 +115,45 @@ function About() {
            <div className="text flex gap-4 mx-4  bg-white py-12 md:px-12   ">
             <div className="logo"><FaQuoteLeft className='text-yellow-600 text-4xl ' /></div>
             <div className="box1">
-            <h1 className='text-xl  text-gray-600 '>On behalf of the White family, I want to thank you for helping us navigate my stepson’s wedding with your warmth and engaging manner.  You and your team added personal interaction (which is immeasurably thoughtful to a mere American) with consummate professionalism. All the best to you, Sephi, your family and your cohort…warmest regards</h1>
+            <h1 className='text-xl  text-gray-600 '>Outstanding service and breathtaking photos! Our couples session was so much fun, and the final images were beyond our expectations. The photographer has an amazing eye for detail and composition.</h1>
             <h2 className='mt-2 text-gray-700'>JEANETTE WHITE - KHOSLA WEDDING , UDAIPUR</h2>
             </div>
            </div>
            <div className="text flex mx-4 gap-2 mt-3  bg-white py-12 md:px-12 px-6  ">
             <div className="logo"><FaQuoteLeft className='text-yellow-600 text-4xl ' /></div>
             <div className="box2">
-            <h1 className='text-xl  text-gray-600 '>Alex and I were looking at our wedding pictures again the other day, and it was as though we were actually there, back in time again. We love the pictures, everyone looks so good, and the colours are just amazing. We have two of the pictures up on the wall here in our home in Bombay. We want to thank you for being a part of our wedding (both our weddings, actually), and tell you again how much we appreciate the fact that you could be there. We couldn’t have asked for anyone better.</h1>
+            <h1 className='text-xl  text-gray-600 '>We had our family portraits taken, and we couldn't be happier with the results. The photographer made us feel comfortable and truly captured our family's spirit. The pictures are now treasured memories on our walls.</h1>
             <h2 className='mt-2 text-gray-700'>VARSHINI & ALEX - MADURAI</h2>
             </div>
            </div>
       </div>
       </div>
       {/* box04_questions_ans */}
-      <Questions/>
+      {/* <Questions/> */}
+      <div className="boxes">
+      <div className="max-w-2xl mx-auto p-4  mt-14">
+        <h2 className="text-2xl font-bold mb-4">Frequently Asked Questions</h2>
+        {faqs.map((faq, index) => (
+          <div key={index} className="mb-4">
+            <button
+              onClick={() => toggleFAQ(index)}
+              className="w-full text-left p-4 bg-gray-100 rounded-lg shadow-md focus:outline-none"
+            >
+              <span className="font-semibold">{faq.question}</span>
+            </button>
+            <div
+              className={`overflow-hidden transition-max-height duration-300 ease-in-out ${openIndex === index ? 'max-h-96' : 'max-h-0'
+                }`}
+            >
+              <div className="p-4 bg-gray-50 rounded-lg shadow-inner">
+                <p>{faq.answer}</p>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+      </div>
+     
     </div>
     </Layout>
   )
