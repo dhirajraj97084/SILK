@@ -81,7 +81,7 @@ function Gallery() {
         </div>
       
       <div className="container main mx-auto py-8">
-      <div className="images grid md:grid-cols-2 grid-cols-1 px-4 gap-2">
+      <div className="images grid md:grid-cols-2 lg:grid-cols-3 grid-cols-1 px-4 gap-2">
          {imageList.map((item,index)=>(
             <div key={index} className="img">
                 <img className='' src={item.image} alt="img1" />

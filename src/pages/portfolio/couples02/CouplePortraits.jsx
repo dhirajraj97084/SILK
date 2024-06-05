@@ -84,7 +84,7 @@ function CouplePortraits() {
          </div>
         </div>
         </div>
-      <div className="images grid  md:grid-cols-2 grid-cols-1 py-4  px-4 gap-2">
+      <div className="images grid  md:grid-cols-2 grid-cols-1 py-4 lg:grid-cols-3  px-4 gap-2">
          {imageList.map((item,index)=>(
             <div key={index} className="img">
                 <img className='' src={item.image} alt="img1" />

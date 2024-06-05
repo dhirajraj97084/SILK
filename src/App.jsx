@@ -34,6 +34,12 @@ import ScrollTop from './component/scrollTop/ScrollTop';
 import Faq from './pages/faq/Faq';
 import UditShivani from './pages/state_wedding_page/goa_wedding/uditAndShivani/UditShivani';
 import AnalisaAndJaydev from './pages/state_wedding_page/goa_wedding/analisajaydev/AnalisaAndJaydev';
+import WeddingShoot from './component/heroGallery/weddingShoot/WeddingShoot';
+import PreWedding from './component/heroGallery/preWedding/PreWedding';
+import BabyShoot from './component/heroGallery/babyShoot/BabyShoot';
+import CoupleShoot from './component/heroGallery/coupleShoot/CoupleShoot';
+import BrightShoot from './component/heroGallery/brightShoot/BrightShoot';
+import Birthday from './component/heroGallery/birthday/Birthday';
 
 
 function App() {
@@ -79,6 +85,13 @@ function App() {
                <Route path='/linda' element={<LindaJoerg/>} />
                <Route path='/udit' element={<UditShivani/>} />
                <Route path='/analisa' element={<AnalisaAndJaydev/>} />
+
+               {/* <Route path='/wedding' element={<WeddingShoot/>}/>
+               <Route path='/prewedding' element={<PreWedding/>}/>
+               <Route path='/baby' element={<BabyShoot/>}/>
+               <Route path='/couple' element={<CoupleShoot/>}/>
+               <Route path='/bright' element={<BrightShoot/>}/>
+               <Route path='/birthday' element={<Birthday/>}/> */}
               
 
           <Route path="/udaipur" element={<Udaipur />} />

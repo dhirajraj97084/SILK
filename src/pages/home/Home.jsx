@@ -7,6 +7,7 @@ import Fixed_herp from '../../component/fixedhero/Fixed_herp'
 import Texthero from '../../component/texts_hero/Texthero'
 import Mehdi_hero from '../../component/hero_mehdi/Mehdi_hero'
 import Layout from '../../component/layout/Layout'
+import HeroGallery from '../../component/heroGallery/heroGallery1/HeroGallery'
 
 
 function Home() {
@@ -15,7 +16,8 @@ function Home() {
       <Hero/>
       <Hero_about/>
       <Herobox2/>
-      <HerophotoGrephy/>
+      {/* <HerophotoGrephy/> */}
+      <HeroGallery/>
       <Fixed_herp/>
       <Texthero/>
       <Mehdi_hero/>    

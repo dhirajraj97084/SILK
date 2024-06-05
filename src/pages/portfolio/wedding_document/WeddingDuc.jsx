@@ -81,7 +81,7 @@ function WeddingDuc() {
           <p className='text-balance text-xl pt-8 text-start px-4 md:text-center'>Step into a world where every moment tells a story. Our wedding documentaries preserve the magic of your special day, capturing the emotions, traditions, and unique details that make your celebration unforgettable. Let us turn your wedding into a timeless film that you'll cherish forever.</p>
          </div>
         </div>
-      <div className="images grid md:grid-cols-2 py-3  grid-cols-1 px-4 gap-2 container main mx-auto">
+      <div className="images grid md:grid-cols-2 py-3  grid-cols-1 lg:grid-cols-3 px-4 gap-2 container main mx-auto">
          {imageList.map((item,index)=>(
             <div key={index} className="img">
                 <img className='' src={item.image} alt="img1" />

@@ -58,18 +58,18 @@ const Faq = () => {
   return (
     <Layout className="div">
       <div className="main">
-        <div className="main flex justify-center items-center h-[34em] bg-no-repeat bg-cover bg-center bg-fixed bg-[url('https://img.freepik.com/free-vector/faq-concept_23-2148151127.jpg?size=626&ext=jpg&ga=GA1.1.672306854.1705143941&semt=ais_user')]">
+        <div className="main flex justify-center items-center h-[18em] md:h-[36em] lg:h-[34em] bg-no-repeat bg-cover bg-center bg-fixed bg-[url('https://img.freepik.com/free-vector/faq-concept_23-2148151127.jpg?size=626&ext=jpg&ga=GA1.1.672306854.1705143941&semt=ais_user')]">
           <div className="text">
           </div>
         </div>
       </div>
-      <div className="max-w-2xl mx-auto p-4  mt-14">
+      <div className="  mt-14 px-4 md:px-8 lg:max-w-4xl mx-auto">
         <h2 className="text-2xl font-bold mb-4">Frequently Asked Questions</h2>
         {faqs.map((faq, index) => (
           <div key={index} className="mb-4">
             <button
               onClick={() => toggleFAQ(index)}
-              className="w-full text-left p-4 bg-gray-100 rounded-lg shadow-md focus:outline-none"
+              className=" w-full text-left p-4 bg-gray-100 rounded-lg shadow-md focus:outline-none"
             >
               <span className="font-semibold">{faq.question}</span>
             </button>
@@ -84,8 +84,8 @@ const Faq = () => {
           </div>
         ))}
       </div>
-      <div className="box md:px-16 py-5 px-4">
-      <div className="text flex gap-4 mx-4 shadow-md bg-white py-12 md:px-12">
+      <div className="box md:px-6 px-2 py-5 ">
+      <div className="text flex gap-4 mx-4 shadow-md px-3 bg-white py-12 md:px-12">
               <div className="logo">
                 <FaQuoteLeft className="text-yellow-600 text-4xl " />
               </div>
