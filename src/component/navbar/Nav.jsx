@@ -250,8 +250,7 @@ export default function Nav() {
         >
           <Link to={'/'}>
           <div className="logo flex items-center gap-1 font-serif">
-            <h1 className="bg-black/45 p-3 text-white  ">SILK</h1>
-            <h2 className="text-sm">By <span className="md:text-xl font-medium  ">SEPHI BERGERSON</span> </h2>
+           <img className="w-[5rem]" src="/img/img1.png" alt="img" />         
           </div>
           </Link>
         </Typography>

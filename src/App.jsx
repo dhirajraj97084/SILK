@@ -59,12 +59,7 @@ function App() {
           <Route path='/coupleport' element={<CouplePortraits/>} />
           {/* resource */}
           <Route path='/faq' element={<Faq/>} />
-          {/* <Route path='/forcouples' element={<ForCouples/>} />
-          <Route path='/one' element={<One/>} />
-          <Route path='/two' element={<Two/>} />
-          <Route path='/three' element={<Three/>} />
-          <Route path='/four' element={<Four/>} /> */}
-          
+        
 
           <Route path='/family' element={<Family/>} />
         
@@ -86,12 +81,12 @@ function App() {
                <Route path='/udit' element={<UditShivani/>} />
                <Route path='/analisa' element={<AnalisaAndJaydev/>} />
 
-               {/* <Route path='/wedding' element={<WeddingShoot/>}/>
+               <Route path='/wedding' element={<WeddingShoot/>}/>
                <Route path='/prewedding' element={<PreWedding/>}/>
                <Route path='/baby' element={<BabyShoot/>}/>
                <Route path='/couple' element={<CoupleShoot/>}/>
                <Route path='/bright' element={<BrightShoot/>}/>
-               <Route path='/birthday' element={<Birthday/>}/> */}
+               <Route path='/birthday' element={<Birthday/>}/>
               
 
           <Route path="/udaipur" element={<Udaipur />} />
@@ -100,13 +95,7 @@ function App() {
           <Route path="/chennai" element={<Chennai />} />
           <Route path="/couple" element={<Couple />} />
 
-          {/* <Route path="/admin/" element={<Admin />}>
-            <Route path="" element={<AdminHome />} />
-            <Route path="allenquiries" element={<Enquiry />} />
-            <Route path="allquries" element={<AdminFaq />} />
-          </Route> */}
-
-          {/* <Route path="/login" element={<Login />} /> */}
+         
         </Routes>
       </Router>
     </div>
