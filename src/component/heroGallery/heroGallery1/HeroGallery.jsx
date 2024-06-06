@@ -49,7 +49,7 @@ function HeroGallery() {
                 return (
                   <Link key={index} to={item.src}>
                   <div
-                    className="main hover:bg-transparent p-3 rounded-md shadow-md  hover:bg-gray-200 m-3"
+                    className="main hover:bg-transparent p-3 rounded-md shadow-md hover:bg-gray-300 m-3"
                   >
                     <div className="img">
                       <img
