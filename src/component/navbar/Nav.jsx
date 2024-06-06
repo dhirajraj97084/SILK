@@ -20,7 +20,6 @@ import {
   XMarkIcon,
 } from "@heroicons/react/24/outline";
 import {
-
   PhoneIcon,
   RectangleGroupIcon,
   SquaresPlusIcon,
@@ -28,8 +27,6 @@ import {
   TagIcon,
   UserGroupIcon,
 } from "@heroicons/react/24/solid";
-
-
 
 const navListMenuItems = [
   {
@@ -62,9 +59,7 @@ const navListMenuItems = [
   //   icon: PhoneIcon,
   //   src:"/learn",
   // },
-
 ];
-
 
 function NavListMenu() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
@@ -86,9 +81,7 @@ function NavListMenu() {
         </div>
       </MenuItem>
     </div>
-
   ));
-
 
   return (
     <React.Fragment>
@@ -109,13 +102,15 @@ function NavListMenu() {
               PORTFOLIO
               <ChevronDownIcon
                 strokeWidth={2.5}
-                className={`hidden h-3 w-3 transition-transform lg:block ${isMenuOpen ? "rotate-180" : ""
-                  }`}
+                className={`hidden h-3 w-3 transition-transform lg:block ${
+                  isMenuOpen ? "rotate-180" : ""
+                }`}
               />
               <ChevronDownIcon
                 strokeWidth={2.5}
-                className={`block h-3 w-3 transition-transform lg:hidden ${isMobileMenuOpen ? "rotate-180" : ""
-                  }`}
+                className={`block h-3 w-3 transition-transform lg:hidden ${
+                  isMobileMenuOpen ? "rotate-180" : ""
+                }`}
               />
             </ListItem>
           </Typography>
@@ -125,12 +120,10 @@ function NavListMenu() {
             {renderItems}
           </ul>
         </MenuList>
-
       </Menu>
       <div className="block lg:hidden">
         <Collapse open={isMobileMenuOpen}>{renderItems}</Collapse>
       </div>
-
     </React.Fragment>
   );
 }
@@ -138,76 +131,49 @@ function NavListMenu() {
 function NavList() {
   return (
     <List className=" pt-4 mb-6 p-0 lg:mt-0 lg:mb-0 lg:flex-row lg:p-1 ">
-      <Typography
-        as="a"
-        href="#"
-        color="blue-gray"
-        className="font-medium"
-      >
-        <Link to={'/'}>
-          <ListItem className="flex items-center gap-2 font-serif  pr-4 underline decoration-blue-200 underline-offset-8 ">HOME
+      <Typography as="a" href="#" color="blue-gray" className="font-medium">
+        <Link to={"/"}>
+          <ListItem className="flex items-center gap-2 font-serif  pr-4 underline decoration-blue-200 underline-offset-8 ">
+            HOME
           </ListItem>
         </Link>
       </Typography>
       <hr className="lg:hidden " />
       <NavListMenu />
       <hr className="lg:hidden" />
-      <Typography
-        as="a"
-        href="#"
-        color="blue-gray"
-        className="font-medium"
-      >
-        <Link to={'/goa'}>
+      <Typography as="a" href="#" color="blue-gray" className="font-medium">
+        <Link to={"/goa"}>
           <ListItem className="flex items-center gap-2 font-serif pr-4 hover:underline decoration-blue-200 underline-offset-8 ">
             WEDDING
           </ListItem>
           <hr className="lg:hidden" />
         </Link>
-
       </Typography>
-      <Typography
-        as="a"
-        href="#"
-        color="blue-gray"
-        className="font-medium"
-      >
-        <Link to={'/faq'}>
-          <ListItem className="flex items-center gap-2 font-serif pr-4 hover:underline decoration-blue-200 underline-offset-8 ">FAQ
+      <Typography as="a" href="#" color="blue-gray" className="font-medium">
+        <Link to={"/faq"}>
+          <ListItem className="flex items-center gap-2 font-serif pr-4 hover:underline decoration-blue-200 underline-offset-8 ">
+            FAQ
           </ListItem>
         </Link>
       </Typography>
       <hr className="lg:hidden" />
 
-
-      <Typography
-        as="a"
-        href="#"
-        color="blue-gray"
-        className="font-medium"
-      >
-        <Link to={'/about'}>
+      <Typography as="a" href="#" color="blue-gray" className="font-medium">
+        <Link to={"/about"}>
           <ListItem className="flex items-center gap-2 pr-4 font-serif hover:underline decoration-blue-200 underline-offset-8">
             ABOUT
           </ListItem>
           <hr className="lg:hidden" />
         </Link>
-
       </Typography>
 
-      <Typography
-        as="a"
-        href="#"
-        color="blue-gray"
-        className="font-medium"
-      >
-        <Link to={'/contact'}>
+      <Typography as="a" href="#" color="blue-gray" className="font-medium">
+        <Link to={"/contact"}>
           <ListItem className="flex items-center gap-2 pr-4 font-serif hover:underline decoration-blue-200 underline-offset-8">
             CONTACT
           </ListItem>
           <hr className="lg:hidden" />
         </Link>
-
       </Typography>
     </List>
   );
@@ -228,27 +194,23 @@ export default function Nav() {
   const changeColor = () => {
     if (window.scrollY <= 0) {
       setColor(true);
-    }
-    else {
+    } else {
       setColor(false);
     }
-  }
+  };
 
   window.addEventListener("scroll", changeColor, true);
 
   return (
-    <Navbar className={` rounded-none max-w-full shadow-md top-0 sticky z-20 border-none 
-    ${color ? "navbarComp" : "navbarScrolled"}`}>
+    <Navbar
+      className={` rounded-none max-w-full shadow-md top-0 sticky z-20 border-none 
+    ${color ? "navbarComp" : "navbarScrolled"}`}
+    >
       <div className="flex items-center justify-between text-blue-gray-900 ">
-        <Typography
-          as="a"
-          href="#"
-
-          className="mr-4 cursor-pointer lg:px-16"
-        >
-          <Link to={'/'}>
+        <Typography as="a" href="#" className="mr-4 cursor-pointer lg:px-16">
+          <Link to={"/"}>
             <div className="logo">
-              <img className=" w-20 " src="/img/img1.png" alt="img" />
+              <img className=" w-24 " src="/img/img1.png" alt="img" />
             </div>
           </Link>
         </Typography>
